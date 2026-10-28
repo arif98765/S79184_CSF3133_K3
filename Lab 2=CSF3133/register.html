@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+    </head>
+    <body>
+
+<!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="register.html" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="Mnumber">Matric Number:</label>
+        <input type="tel" id="Mnumber" name="Mnumber"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="year1">Year of Study:</label><br>
+        <input type="radio" id="year1" name="yearOfStudy" value="1" required>
+        <label for="year1">1</label><br>
+        <input type="radio" id="year2" name="yearOfStudy" value="2" required>
+        <label for="year2">2</label><br>
+        <input type="radio" id="year3" name="yearOfStudy" value="3" required>
+        <label for="year3">3</label><br>
+        <input type="radio" id="year4" name="yearOfStudy" value="4" required>
+        <label for="year4">4</label><br><br>
+
+        <label for="session">Program:</label><br>
+        <select id="session" name="session">
+            <option value="Software">Software Engineering</option>
+            <option value="Computer">Computer Science</option>
+            <option value="Information">Information Technology</option>
+        </select><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
