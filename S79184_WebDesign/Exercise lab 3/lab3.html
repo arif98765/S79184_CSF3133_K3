@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form with Inline Calculator</title>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <div id="header">
+    <h1>Contact Us</h1>
+    <span>We'd love to hear from you &ndash; send us your thoughts!</span>
+  </div>
+
+  <hr>
+
+  <!-- Content Section -->
+  <div id="content">
+
+    <!-- Contact Form -->
+    <div id="contact-form">
+      <h2>Contact Form</h2>
+      <form action="#" method="post">
+        <p>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="enter your email" required>
+        </p>
+
+        <p>
+          <label for="contact-date">Preferred Contact Date:</label>
+          <input type="date" id="contact-date" name="contact-date">
+        </p>
+
+        <p>
+          <label for="satisfaction">Satisfaction Level:</label>
+          1 <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" value="5"
+                   oninput="level.value = satisfaction.value"> 10
+          (<output id="level" name="level" for="satisfaction">5</output>)
+        </p>
+
+        <p>
+          <input type="submit" value="Submit">
+        </p>
+      </form>
+    </div>
+
+    <hr>
+
+    <!-- Inline Calculator -->
+    <div id="calculator">
+      <h2>Inline Calculator</h2>
+      <form oninput="result.value = (parseFloat(num1.value) || 0) + (parseFloat(num2.value) || 0)">
+        <input type="number" id="num1" name="num1" value="0">
+        +
+        <input type="number" id="num2" name="num2" value="0">
+        =
+        <output name="result" for="num1 num2">0</output>
+      </form>
+    </div>
+
+  </div>
+
+  <hr>
+
+  <!-- Footer Section -->
+  <div id="footer">
+    <p>Contact: arif@mywebsite.com &nbsp;|&nbsp; Phone: +60 12-345 6789</p>
+    <p>&copy; 2026 My Website. All rights reserved.</p>
+  </div>
+
+</body>
+</html>
